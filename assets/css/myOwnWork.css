@@ -1,0 +1,9 @@
+/* my own */
+
+.social-links svg:hover {
+    fill: #0563bb;
+  }
+
+footer svg {
+    fill: white;
+}
