@@ -1,6 +1,9 @@
 document.getElementById('sendMailForm').addEventListener('submit', async function (event) {
     event.preventDefault(); // Prevent the default form submission
 
+    //set loader
+    document.getElementById('loader').style.display = 'block'
+
     // Get form values
     const name = document.getElementById('name').value;
     const email = document.getElementById('email').value;
@@ -28,13 +31,18 @@ document.getElementById('sendMailForm').addEventListener('submit', async functio
     
     if (response.ok == true)
     {
-
         document.getElementById('name').value = '';
         document.getElementById('email').value = '';
         document.getElementById('subject').value = '';
         document.getElementById('message').value = '';    
+        document.getElementById('loader').style.display = 'none'
+        document.getElementById('sent-message').style.display = 'block'
+
     }
     else {
         console.log('error getting api')
+        document.getElementById('loader').style.display = 'none'
+        document.getElementById('error-message').style.display = 'block'
+
     }
 });
