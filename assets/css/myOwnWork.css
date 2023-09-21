@@ -7,3 +7,7 @@
 footer svg {
     fill: white;
 }
+
+.row {
+  justify-content: center;
+}
