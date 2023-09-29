@@ -1,11 +1,15 @@
 /* my own */
 
+#hero .social-links svg {
+  fill: #45505b;
+}
+
 #hero .social-links svg:hover {
-    fill: #0563bb;
-  }
+  fill: #0563bb;
+}
 
 footer svg {
-    fill: white;
+  fill: white;
 }
 
 .row {
